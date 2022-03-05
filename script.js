@@ -2,7 +2,7 @@ function compute()
 {
     //simple interst logic area
     var principal = document.getElementById("principal").value;
-    if(parseInt(principal) < 1) 
+    if(parseInt(principal) < 1 || principal == "") 
     {
 		alert("Enter a positive number");
 		document.getElementById("principal").focus();
